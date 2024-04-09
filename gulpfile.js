@@ -8,13 +8,13 @@ function styles(){
     .pipe(gulp.dest('./dist/css'));
 }
 
-function pictures(){
-    return gulp.src('./src/pictures/**/*')
+function images(){
+    return gulp.src('./src/images/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/pictures'));
+    .pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel(styles,pictures);
+exports.default = gulp.parallel(styles, images);
 
 exports.watch = function (){
     gulp.watch('./src/styles/*.scss',gulp.parallel(styles))
