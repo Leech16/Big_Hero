@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: variaveis.$CorPrincipal;
+
+    &__container{
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        display: flex;
+        
+        background-color: black;
+    }
+
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    &__links{
+        display: flex;
+    }
+
+    &__item{
+        margin: 5px;
+    }
+}
+
